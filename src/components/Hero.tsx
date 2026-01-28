@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
                         delay={0.4}
                     />
                     <FeatureCard
-                        title="Sales Enablement"
+                        title="Paid Ads"
                         image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
                         delay={0.5}
                     />

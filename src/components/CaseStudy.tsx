@@ -4,55 +4,70 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+declare global {
+    interface Window {
+        Cal?: any;
+    }
+}
+
 const CaseStudy: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
 
         // Initialize Cal.com embed for case study
-        (function (C: any, A: any, L: any) {
-            let p = function (a: any, ar: any) {
+        (function (C: any, A: string, L: string) {
+            const p = function (a: any, ar: any) {
                 a.q.push(ar);
             };
-            let d = C.document;
-            C.Cal = C.Cal || function () {
-                let cal = C.Cal;
-                let ar = arguments;
-                if (!cal.loaded) {
-                    cal.ns = {};
-                    cal.q = cal.q || [];
-                    d.head.appendChild(d.createElement("script")).src = A;
-                    cal.loaded = true;
-                }
-                if (ar[0] === L) {
-                    const api = function () {
-                        p(api, arguments);
-                    };
-                    const namespace = ar[1];
-                    api.q = api.q || [];
-                    if (typeof namespace === "string") {
-                        cal.ns[namespace] = cal.ns[namespace] || api;
-                        p(cal.ns[namespace], ar);
+            const d = C.document;
+            C.Cal =
+                C.Cal ||
+                function (this: any) {
+                    const cal = C.Cal;
+                    const ar = arguments;
+                    if (!cal.loaded) {
+                        cal.ns = {};
+                        cal.q = [] as any[];
+                        const s = d.createElement('script');
+                        s.src = A;
+                        d.head.appendChild(s);
+                        cal.loaded = true;
+                    }
+                    if (ar[0] === L) {
+                        const api: any = function (this: any) {
+                            p(api, arguments);
+                        };
+                        const namespace = ar[1];
+                        api.q = [] as any[];
+                        if (typeof namespace === 'string') {
+                            cal.ns[namespace] = cal.ns[namespace] || api;
+                            p(cal.ns[namespace], ar);
+                            p(cal, ['initNamespace', namespace]);
+                        } else p(cal, ar);
                         return;
                     }
                     p(cal, ar);
-                    return;
-                }
-                p(cal, ar);
-            };
-        })(window, "https://app.cal.com/embed/embed.js", "init");
+                };
+        })(window as any, 'https://app.cal.com/embed/embed.js', 'init');
 
-        (window as any).Cal("init", "discoverycall", { origin: "https://cal.com" });
-        (window as any).Cal("inline", {
-            elementOrSelector: "#my-cal-inline-casestudy",
-            calLink: "tryventra/discoverycall",
-            layout: "month_view"
-        });
-        (window as any).Cal("ui", {
-            theme: "light",
-            styles: { branding: { brandColor: "#000000" } },
-            hideEventTypeDetails: false,
-            layout: "month_view"
-        });
+        const setupCal = () => {
+            if (window.Cal) {
+                window.Cal('init', 'discoverycall', { origin: 'https://cal.com' });
+                window.Cal('inline', {
+                    elementOrSelector: '#my-cal-inline-casestudy',
+                    calLink: 'tryventra/discoverycall',
+                    config: { layout: 'month_view' }
+                });
+                window.Cal('ui', {
+                    theme: 'light',
+                    styles: { branding: { brandColor: '#000000' } },
+                    hideEventTypeDetails: false,
+                    layout: 'month_view'
+                });
+            }
+        };
+
+        setupCal();
     }, []);
 
     return (

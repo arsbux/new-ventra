@@ -37,8 +37,7 @@ const Hero: React.FC = () => {
                     className="hero-heading"
                 >
                     <DynamicGradientWrapper colors={[color1, color2, color3, color4]}>
-                        Do you need <br />
-                        more clients?
+                        Do you need more clients?
                     </DynamicGradientWrapper>
                 </motion.h1>
 

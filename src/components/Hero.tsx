@@ -18,14 +18,16 @@ const Hero: React.FC = () => {
         <section className="hero-section" id="home">
             <div className="container hero-container">
                 {/* Badge */}
-                <motion.div
+                <motion.a
+                    href="#contact"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     className="hero-badge"
+                    style={{ cursor: 'pointer', textDecoration: 'none' }}
                 >
-                    Explore the 2026 Guide to B2B Acquisition <ArrowRight size={14} style={{ marginLeft: 6 }} />
-                </motion.div>
+                    Book a free discovery call <ArrowRight size={14} style={{ marginLeft: 6 }} />
+                </motion.a>
 
                 {/* Main Heading */}
                 <motion.h1

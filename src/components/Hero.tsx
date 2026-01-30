@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
                             className="hero-heading"
                         >
                             <DynamicGradientWrapper colors={[color1, color2, color3, color4]}>
-                                Top 2253 Startup Investors in the US and UK
+                                Top 2253 Startup Investors
                             </DynamicGradientWrapper>
                         </motion.h1>
 

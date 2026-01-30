@@ -7,22 +7,25 @@ const testimonials = [
         id: 1,
         quote: "We were struggling to find the right VCs for our seed round. Ventra's list gave us 50 perfect matches in minutes. We closed in 3 weeks.",
         author: "Sarah J., Founder of Nexa AI",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop",
-        position: 'center 30%'
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format",
+        position: 'center 10%',
+        size: 'cover'
     },
     {
         id: 2,
         quote: "The manual research was killing our momentum. Having a vetted list of active angels with direct emails was a total game-changer for our Pre-Seed.",
         author: "Marcus T., CTO of Veridate",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop",
-        position: 'center'
+        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format",
+        position: 'center top',
+        size: 'cover'
     },
     {
         id: 3,
         quote: "...it was crucial to keep getting clients and Ventra helped enabled a seamless partnership",
         author: "Nichole Wischoff, From Insight Evaluation Solutions",
         image: "/testimonials/nicole-wischoff.jpg",
-        position: 'center'
+        position: 'center 10%',
+        size: 'cover'
     },
     {
         id: 4,
@@ -94,7 +97,8 @@ const Testimonials: React.FC = () => {
                     >
                         <div className="testimonial-bg" style={{
                             backgroundImage: `url(${testimonials[index].image})`,
-                            backgroundPosition: (testimonials[index] as any).position || 'center'
+                            backgroundPosition: (testimonials[index] as any).position || 'center',
+                            backgroundSize: (testimonials[index] as any).size || 'cover'
                         }}>
                             <div className="testimonial-overlay" />
                         </div>

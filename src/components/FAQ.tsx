@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: "What files will I receive exactly?",
-        answer: "You'll get an investor_2200.csv for easy CRM import, a filterable Google Sheet, a quickstart.md guide, outreach email templates (PDF), and a pitch checklist (PDF)."
+        answer: "You'll get an investor_2253.csv for easy CRM import, a filterable Google Sheet, a quickstart.md guide, outreach email templates (PDF), and a pitch checklist (PDF)."
     }
 ];
 

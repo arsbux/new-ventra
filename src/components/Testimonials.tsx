@@ -12,14 +12,6 @@ const testimonials = [
         size: 'cover'
     },
     {
-        id: 2,
-        quote: "The manual research was killing our momentum. Having a vetted list of active angels with direct emails was a total game-changer for our Pre-Seed.",
-        author: "Marcus T., CTO of Veridate",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format",
-        position: 'center top',
-        size: 'cover'
-    },
-    {
         id: 3,
         quote: "...it was crucial to keep getting clients and Ventra helped enabled a seamless partnership",
         author: "Nichole Wischoff, From Insight Evaluation Solutions",

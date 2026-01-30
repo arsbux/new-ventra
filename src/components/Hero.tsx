@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="hero-image-container"
                         >
-                            <img src="/vc-table.png" alt="Investor Database Table" className="hero-table-image" />
+                            <img src="/hero image.png" alt="Investor Database Table" className="hero-table-image" />
                         </motion.div>
                     </div>
                 </div>

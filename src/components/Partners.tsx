@@ -16,7 +16,7 @@ const Partners: React.FC = () => {
                             <h3 className="fund-title">Full Service Fundraising Support</h3>
 
                             <div className="service-items-wrapper">
-                                <div className="service-item"><strong>Tailored Lists</strong> — We filter our 5,000+ database into a high-intent list of 100+ investors perfectly matched to your round.</div>
+                                <div className="service-item"><strong>Tailored Lists</strong> — We filter our 2,200+ database into a high-intent list of 100+ investors perfectly matched to your round.</div>
                                 <div className="service-item"><strong>Direct Contacts</strong> — No gatekeepers. Get verified direct emails of partners and principals with a 99% deliverability rate.</div>
                                 <div className="service-item"><strong>Thesis Enrichment</strong> — Go beyond the name. We provide recent investment history and the specific thesis of every investor.</div>
                                 <div className="service-item"><strong>Pitch Support</strong> — Get access to our library of winning pitch decks and outreach templates that have raised $500M+.</div>

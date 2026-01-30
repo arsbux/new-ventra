@@ -131,7 +131,7 @@ const CaseStudy: React.FC = () => {
                                 <div className="m-step">
                                     <span className="m-num">01</span>
                                     <div className="m-text">
-                                        <strong>Targeted Filtering</strong> — We narrowed down 5,000+ investors to the top 100 based on Nexa's vertical and stage.
+                                        <strong>Targeted Filtering</strong> — We narrowed down 2,200+ investors to the top 100 based on Nexa's vertical and stage.
                                     </div>
                                 </div>
                                 <div className="m-step">

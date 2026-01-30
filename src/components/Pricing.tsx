@@ -22,7 +22,7 @@ const Pricing: React.FC = () => {
                         <div className="card-body">
                             <h3 className="card-plan-title">The Master List</h3>
                             <p className="card-plan-subtitle">Ideal for early-stage founders</p>
-                            <p className="card-plan-desc">Instant access to our full 5,000+ investor database with direct contact emails and thesis details.</p>
+                            <p className="card-plan-desc">Instant access to our full 2,200+ investor database with direct contact emails and thesis details.</p>
 
                             <div className="card-price-container">
                                 <div className="price-label">One-time</div>

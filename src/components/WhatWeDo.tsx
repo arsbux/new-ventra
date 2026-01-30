@@ -13,20 +13,33 @@ const WhatWeDo: React.FC = () => {
                         <div className="offer-content-main">
                             <div className="offer-tag-minimal">Instant Access</div>
                             <h2 className="offer-title-minimal">The Master Investor List</h2>
-                            <p className="offer-desc-minimal">Lifetime access to our full database of 5,000+ active investors across all sectors and stages.</p>
+                            <p className="offer-desc-minimal">Lifetime access to our full database of 2,200+ active investors across all sectors and stages.</p>
                             <a href="#pricing" className="btn-get-started-minimal">Get access</a>
                         </div>
                         <div className="offer-details-minimal">
                             <div className="details-group">
                                 <h4 className="details-label-minimal">What this includes</h4>
                                 <ul className="minimal-list">
-                                    <li><Check size={14} /> 5,000+ VCs & Angels</li>
-                                    <li><Check size={14} /> Direct email addresses</li>
-                                    <li><Check size={14} /> Investment thesis details</li>
-                                    <li><Check size={14} /> Geography & Stage filters</li>
-                                    <li><Check size={14} /> Recent portfolio wins</li>
+                                    <li><Check size={14} /> 2,200+ VCs & Angels</li>
+                                    <li><Check size={14} /> Verified Partner Emails</li>
+                                    <li><Check size={14} /> Sector & Stage Focus</li>
+                                    <li><Check size={14} /> Full Portfolio History</li>
+                                    <li><Check size={14} /> Direct LinkedIn/Twitter</li>
                                     <li><Check size={14} /> Lifetime free updates</li>
                                 </ul>
+
+                                <div className="data-fields-display">
+                                    <h4 className="details-label-minimal" style={{ marginTop: '32px' }}>Database Columns</h4>
+                                    <div className="data-fields-grid">
+                                        {[
+                                            "Investor Name", "Fund Type", "Fund Stage", "Website",
+                                            "Fund Focus (Sectors)", "Partner Name", "Partner Email",
+                                            "Portfolio Companies", "Location", "Twitter Link", "LinkedIn Link"
+                                        ].map((field) => (
+                                            <span key={field} className="data-field-tag">{field}</span>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -92,7 +105,7 @@ const WhatWeDo: React.FC = () => {
                             <div className="step-num-minimal">03</div>
                             <h4 className="step-title-minimal">Contextual Enrichment</h4>
                             <p className="step-text-minimal">
-                                We add depth to every profile, including recent investments, preferred round sizes, and geographic focus.
+                                Every entry is enriched with 11+ key data points: Investor Name, Fund Type, Stage, Website, Sector Focus, Partner Name, Verified Email, Portfolio, Location, and Social Links.
                             </p>
                         </div>
 

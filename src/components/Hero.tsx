@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
                             className="hero-subheading"
                             style={{ color: 'var(--dynamic-text)', opacity: 0.7 }}
                         >
-                            A well-curated database of 5,000+ active VCs, Angels, and PE firms with direct contact emails and investment thesis.
+                            A well-curated database of 2,200+ active VCs, Angels, and PE firms with direct contact emails and investment thesis.
                         </motion.p>
 
                         {/* CTA Button */}

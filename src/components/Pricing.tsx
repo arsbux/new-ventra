@@ -1,4 +1,5 @@
 import React from 'react';
+import { Check, Shield } from 'lucide-react';
 
 const Pricing: React.FC = () => {
     return (
@@ -7,60 +8,50 @@ const Pricing: React.FC = () => {
                 <div className="pricing-intro">
                     <div className="pricing-label">
                         <span className="dot-prefix">●</span>
-                        <span className="label">Offerings</span>
+                        <span className="label">Simple Pricing</span>
                     </div>
                     <div className="pricing-header-content">
-                        <h2 className="pricing-main-title">Focused acquisition, transparent pricing</h2>
-                        <p className="pricing-subtitle">Execution-first service with plans built for scaling high-ticket brands.</p>
+                        <h2 className="pricing-main-title">One-time investment, infinite reach</h2>
+                        <p className="pricing-subtitle">Get the complete 2253 investor database and all bonuses for one flat fee.</p>
                     </div>
                 </div>
 
-                <div className="pricing-grid">
-                    {/* The Master List Card */}
-                    <div className="pricing-card">
-                        <div className="card-top-accent traditional-accent"></div>
+                <div className="pricing-grid single-pricing-grid">
+                    {/* Master List Card */}
+                    <div className="pricing-card featured-pricing-card">
+                        <div className="card-top-accent pro-accent"></div>
                         <div className="card-body">
+                            <div className="card-badge-minimal">Complete Package</div>
                             <h3 className="card-plan-title">The Master List</h3>
-                            <p className="card-plan-subtitle">Ideal for early-stage founders</p>
-                            <p className="card-plan-desc">Instant access to our full 2,200+ investor database with direct contact emails and thesis details.</p>
+                            <p className="card-plan-subtitle">Everything you need to close your round</p>
+                            <p className="card-plan-desc">One-time download of the full 2253 investor database, outreach templates, and fundraising guides.</p>
 
                             <div className="card-price-container">
                                 <div className="price-label">One-time</div>
                                 <div className="price-value-row">
                                     <span className="price-currency">$</span>
-                                    <span className="price-amount">499</span>
-                                    <span className="price-period">lifetime access</span>
+                                    <span className="price-amount">59.99</span>
                                 </div>
                             </div>
 
-                            <a href="#contact" className="btn-pricing-cta">Get Instant Access</a>
-                        </div>
-                    </div>
+                            <ul className="pricing-features">
+                                <li><Check size={14} /> Full 2253 Entry CSV (US & UK)</li>
+                                <li><Check size={14} /> Filterable Master Google Sheet</li>
+                                <li><Check size={14} /> Verified Partner & Fund Emails</li>
+                                <li><Check size={14} /> 3 Cold Email Pitch Templates</li>
+                                <li><Check size={14} /> Pre-Outreach Checklist</li>
+                                <li><Check size={14} /> Quartery Update Access (3 Months)</li>
+                            </ul>
 
-                    {/* Bespoke Sourcing Card */}
-                    <div className="pricing-card featured-pricing-card">
-                        <div className="card-top-accent paid-accent"></div>
-                        <div className="card-body">
-                            <div className="card-badge-minimal">Recommended</div>
-                            <h3 className="card-plan-title">Bespoke Sourcing</h3>
-                            <p className="card-plan-subtitle">Ideal for Series A+ rounds</p>
-                            <p className="card-plan-desc">We hand-pick 200 perfect-fit investors for your specific round, vertical, and geography. Includes warm intro strategy.</p>
-
-                            <div className="card-price-container">
-                                <div className="price-label">Starting at</div>
-                                <div className="price-value-row">
-                                    <span className="price-currency">$</span>
-                                    <span className="price-amount">1,499</span>
-                                    <span className="price-period">per round</span>
-                                </div>
-                            </div>
-
-                            <a href="#contact" className="btn-pricing-cta">Enquire Now</a>
+                            <a href="https://whop.com/checkout/plan_p5uSJHbKbfM41" className="btn-pricing-cta">Get Instant Access</a>
                         </div>
                     </div>
                 </div>
 
-                <p className="pricing-fine-print">All plans include dedicated account management, multi-channel setup, and weekly optimization reports. Custom enterprise plans available upon request.</p>
+                <div className="refund-policy-simple">
+                    <Shield size={18} style={{ marginRight: 8, color: '#666' }} />
+                    <p>7-day refund if file cannot be downloaded or is corrupt. No refunds after successful download.</p>
+                </div>
             </div>
         </section>
     );

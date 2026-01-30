@@ -13,16 +13,16 @@ const testimonials = [
     },
     {
         id: 3,
-        quote: "...it was crucial to keep getting clients and Ventra helped enabled a seamless partnership",
-        author: "Nichole Wischoff, From Insight Evaluation Solutions",
+        quote: "After getting the list, reach out to Wischoff Ventures, and we will be the first to invest",
+        author: "Nichole Wischoff, Founder of Wischoff Ventures",
         image: "/testimonials/nicole-wischoff.jpg",
         position: 'center 10%',
         size: 'cover'
     },
     {
         id: 4,
-        quote: "...first month didn't go as planned but we made more than the retainer cost us.",
-        author: "Lenny Rachitsky, Lenny's Newsletter",
+        quote: "The master database is a game changer for early-stage founders. We built a high-intent list for Gemma Corp and started pitching within 24 hours.",
+        author: "Lenny Rachitsky, Founder of Gemma Corp",
         image: "/testimonials/Lenny.jpg",
         position: 'center'
     }

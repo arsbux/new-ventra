@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
                             className="hero-heading"
                         >
                             <DynamicGradientWrapper colors={[color1, color2, color3, color4]}>
-                                Skip the research. Find your lead investor.
+                                Top 2253 Startup Investors in the US and UK
                             </DynamicGradientWrapper>
                         </motion.h1>
 
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
                             className="hero-subheading"
                             style={{ color: 'var(--dynamic-text)', opacity: 0.7 }}
                         >
-                            A well-curated database of 2,200+ active VCs, Angels, and PE firms with direct contact emails and investment thesis.
+                            2253 Active VC & Angel Contacts — CSV + Google Sheet (Seed → Series E)
                         </motion.p>
 
                         {/* CTA Button */}
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.3 }}
                         >
-                            <a href="#pricing" className="btn-cta">Get Instant Access</a>
+                            <a href="https://whop.com/checkout/plan_p5uSJHbKbfM41" className="btn-cta">Get Instant Access</a>
                         </motion.div>
                     </div>
 
@@ -75,6 +75,34 @@ const Hero: React.FC = () => {
                         </motion.div>
                     </div>
                 </div>
+
+                {/* Logo Marquee */}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.8 }}
+                    className="hero-marquee-wrapper"
+                >
+                    <p className="marquee-label">All these and more</p>
+                    <div className="marquee-content">
+                        <div className="marquee-track">
+                            {[...Array(2)].map((_, i) => (
+                                <div key={i} className="marquee-group">
+                                    {[
+                                        "image copy 10.png", "image copy 11.png", "image copy 12.png",
+                                        "image copy 13.png", "image copy 14.png", "image copy 15.png",
+                                        "image copy 16.png", "image copy 17.png", "image copy 2.png",
+                                        "image copy 3.png", "image copy 4.png", "image copy 5.png",
+                                        "image copy 6.png", "image copy 7.png", "image copy 8.png",
+                                        "image copy 9.png", "image copy.png", "image.png"
+                                    ].map((logo, index) => (
+                                        <img key={index} src={`/logos/${logo}`} alt="Partner Logo" className="marquee-logo" />
+                                    ))}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </motion.div>
             </div>
         </section>
     );

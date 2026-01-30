@@ -1,73 +1,12 @@
 import React, { useEffect } from 'react';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-declare global {
-    interface Window {
-        Cal?: any;
-    }
-}
-
 const CaseStudy: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-
-        // Initialize Cal.com embed for case study
-        (function (C: any, A: string, L: string) {
-            const p = function (a: any, ar: any) {
-                a.q.push(ar);
-            };
-            const d = C.document;
-            C.Cal =
-                C.Cal ||
-                function (this: any) {
-                    const cal = C.Cal;
-                    const ar = arguments;
-                    if (!cal.loaded) {
-                        cal.ns = {};
-                        cal.q = [] as any[];
-                        const s = d.createElement('script');
-                        s.src = A;
-                        d.head.appendChild(s);
-                        cal.loaded = true;
-                    }
-                    if (ar[0] === L) {
-                        const api: any = function (this: any) {
-                            p(api, arguments);
-                        };
-                        const namespace = ar[1];
-                        api.q = [] as any[];
-                        if (typeof namespace === 'string') {
-                            cal.ns[namespace] = cal.ns[namespace] || api;
-                            p(cal.ns[namespace], ar);
-                            p(cal, ['initNamespace', namespace]);
-                        } else p(cal, ar);
-                        return;
-                    }
-                    p(cal, ar);
-                };
-        })(window as any, 'https://app.cal.com/embed/embed.js', 'init');
-
-        const setupCal = () => {
-            if (window.Cal) {
-                window.Cal('init', 'discoverycall', { origin: 'https://cal.com' });
-                window.Cal('inline', {
-                    elementOrSelector: '#my-cal-inline-casestudy',
-                    calLink: 'tryventra/discoverycall',
-                    config: { layout: 'month_view' }
-                });
-                window.Cal('ui', {
-                    theme: 'light',
-                    styles: { branding: { brandColor: '#000000' } },
-                    hideEventTypeDetails: false,
-                    layout: 'month_view'
-                });
-            }
-        };
-
-        setupCal();
     }, []);
 
     return (
@@ -131,7 +70,7 @@ const CaseStudy: React.FC = () => {
                                 <div className="m-step">
                                     <span className="m-num">01</span>
                                     <div className="m-text">
-                                        <strong>Targeted Filtering</strong> — We narrowed down 2,200+ investors to the top 100 based on Nexa's vertical and stage.
+                                        <strong>Targeted Filtering</strong> — We narrowed down 2253 investors to the top 100 based on Nexa's vertical and stage.
                                     </div>
                                 </div>
                                 <div className="m-step">
@@ -155,19 +94,18 @@ const CaseStudy: React.FC = () => {
                                 <cite>— Sarah J., Nexa AI</cite>
                             </blockquote>
                         </section>
+
+                        <section className="article-section final-cta-section">
+                            <div className="final-cta-card">
+                                <h2>Ready to start your outreach?</h2>
+                                <p>Get instant access to the same database used by Nexa AI and start closing your round today.</p>
+                                <a href="https://whop.com/checkout/plan_p5uSJHbKbfM41" className="btn-final-cta">
+                                    Get Instant Access <ArrowRight size={18} />
+                                </a>
+                            </div>
+                        </section>
                     </div>
                 </div>
-
-                {/* Full-width booking section */}
-                <section className="cs-booking-section">
-                    <div className="container">
-                        <h2>Ready to close your round?</h2>
-                        <p>Ventra can help you skip the research and get straight to the pitch. Book a discovery call to see how we can help you find your lead investor.</p>
-                        <div className="cal-embed-wrapper-cs">
-                            <div style={{ width: '100%', height: '100%', overflow: 'scroll' }} id="my-cal-inline-casestudy"></div>
-                        </div>
-                    </div>
-                </section>
             </article>
 
             <Footer />

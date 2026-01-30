@@ -1,123 +1,85 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import { Check, FileText, Database, ShieldCheck, Zap, Mail } from 'lucide-react';
 
 const WhatWeDo: React.FC = () => {
     return (
         <section className="what-we-do-section" id="services">
             <div className="container">
-                <h2 className="what-we-do-main-header">Stop manual research</h2>
-                {/* Part 1: Minimalist Offers Grid */}
-                <div className="offers-grid">
-                    {/* Offer 1 */}
-                    <div className="offer-card-minimal">
-                        <div className="offer-content-main">
-                            <div className="offer-tag-minimal">Instant Access</div>
-                            <h2 className="offer-title-minimal">The Master Investor List</h2>
-                            <p className="offer-desc-minimal">Lifetime access to our full database of 2,200+ active investors across all sectors and stages.</p>
-                            <a href="#pricing" className="btn-get-started-minimal">Get access</a>
-                        </div>
-                        <div className="offer-details-minimal">
-                            <div className="details-group">
-                                <h4 className="details-label-minimal">What this includes</h4>
-                                <ul className="minimal-list">
-                                    <li><Check size={14} /> 2,200+ VCs & Angels</li>
-                                    <li><Check size={14} /> Verified Partner Emails</li>
-                                    <li><Check size={14} /> Sector & Stage Focus</li>
-                                    <li><Check size={14} /> Full Portfolio History</li>
-                                    <li><Check size={14} /> Direct LinkedIn/Twitter</li>
-                                    <li><Check size={14} /> Lifetime free updates</li>
-                                </ul>
+                {/* Overview Section */}
+                <div className="overview-container">
+                    <h2 className="section-title">Stop wasting weeks hunting for investors</h2>
+                    <p className="section-description">
+                        This curated rolodex gives you a launchpad for targeted outreach: 2253 funds and partners that actively fund early stage startups, organized and exportable so you can immediately build segmented outreach lists and start sending pitch decks.
+                    </p>
+                </div>
 
-                                <div className="data-fields-display">
-                                    <h4 className="details-label-minimal" style={{ marginTop: '32px' }}>Database Columns</h4>
-                                    <div className="data-fields-grid">
-                                        {[
-                                            "Investor Name", "Fund Type", "Fund Stage", "Website",
-                                            "Fund Focus (Sectors)", "Partner Name", "Partner Email",
-                                            "Portfolio Companies", "Location", "Twitter Link", "LinkedIn Link"
-                                        ].map((field) => (
-                                            <span key={field} className="data-field-tag">{field}</span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                {/* What's Included Section */}
+                <div className="included-grid">
+                    <div className="included-card">
+                        <div className="icon-wrapper"><Database size={24} /></div>
+                        <h3>investor_2253.csv</h3>
+                        <p>Full dataset ready for import (2253 entries) into your CRM or email tool.</p>
                     </div>
-
-                    {/* Offer 2 */}
-                    <div className="offer-card-minimal">
-                        <div className="offer-content-main">
-                            <div className="offer-tag-minimal">Full Concierge</div>
-                            <h2 className="offer-title-minimal">Bespoke Round Prospecting</h2>
-                            <p className="offer-desc-minimal">We build a hand-picked list of 100 perfect-fit investors for your specific round and vertical.</p>
-                            <a href="#pricing" className="btn-get-started-minimal">Enquire</a>
-                        </div>
-                        <div className="offer-details-minimal">
-                            <div className="details-group">
-                                <h4 className="details-label-minimal">What this includes</h4>
-                                <ul className="minimal-list">
-                                    <li><Check size={14} /> Deep-dive ICP analysis</li>
-                                    <li><Check size={14} /> 100 high-intent prospects</li>
-                                    <li><Check size={14} /> Warm intro strategy</li>
-                                    <li><Check size={14} /> Outreach template review</li>
-                                    <li><Check size={14} /> Weekly refinement calls</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div className="included-card">
+                        <div className="icon-wrapper"><Zap size={24} /></div>
+                        <h3>Google Sheet</h3>
+                        <p>Cleaned and filterable master file with tags for stage, sector, and location.</p>
+                    </div>
+                    <div className="included-card">
+                        <div className="icon-wrapper"><FileText size={24} /></div>
+                        <h3>Quickstart Guide</h3>
+                        <p>Step-by-step on how to import, segment, and run a 50-email campaign.</p>
+                    </div>
+                    <div className="included-card">
+                        <div className="icon-wrapper"><Mail size={24} /></div>
+                        <h3>Outreach Templates</h3>
+                        <p>3 proven cold email templates + follow up sequences and subject lines.</p>
+                    </div>
+                    <div className="included-card">
+                        <div className="icon-wrapper"><ShieldCheck size={24} /></div>
+                        <h3>Pitch Checklist</h3>
+                        <p>Short pre-send checklist to increase your reply and response rates.</p>
                     </div>
                 </div>
 
-                {/* Part 2: Sticky Scroll Methodology */}
-                <div className="methodology-container">
-                    <div className="methodology-left">
-                        <div className="sticky-title">
-                            <span className="dot-prefix">●</span>
-                            <span className="label">Our Methodology</span>
-                            <h3 className="methodology-main-title">
-                                How we curate <br />
-                                high-quality <br />
-                                investor data
-                            </h3>
-                            <p className="methodology-desc">
-                                A rigorous verification process to ensure you never waste an email.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="methodology-right">
-                        <div className="step-card-minimal">
-                            <div className="step-num-minimal">01</div>
-                            <h4 className="step-title-minimal">Multi-Source Scraping</h4>
-                            <p className="step-text-minimal">
-                                We aggregate data from 20+ premium sources including Pitchbook, Crunchbase, and proprietary internal databases.
-                            </p>
-                        </div>
-
-                        <div className="step-card-minimal">
-                            <div className="step-num-minimal">02</div>
-                            <h4 className="step-title-minimal">Human Verification</h4>
-                            <p className="step-text-minimal">
-                                Our data team manually verifies every contact email and investment thesis to ensure 99% deliverability.
-                            </p>
-                        </div>
-
-                        <div className="step-card-minimal">
-                            <div className="step-num-minimal">03</div>
-                            <h4 className="step-title-minimal">Contextual Enrichment</h4>
-                            <p className="step-text-minimal">
-                                Every entry is enriched with 11+ key data points: Investor Name, Fund Type, Stage, Website, Sector Focus, Partner Name, Verified Email, Portfolio, Location, and Social Links.
-                            </p>
-                        </div>
-
-                        <div className="step-card-minimal">
-                            <div className="step-num-minimal">04</div>
-                            <h4 className="step-title-minimal">Continuous Updates</h4>
-                            <p className="step-text-minimal">
-                                The VC landscape changes fast. We update our database every 30 days so you always have fresh leads.
-                            </p>
-                        </div>
+                {/* Database Fields Section */}
+                <div className="fields-panel">
+                    <h3 className="panel-subtitle">Every entry includes:</h3>
+                    <div className="fields-flex">
+                        {[
+                            "Investor Name", "Fund Type", "Fund Stage", "Website",
+                            "Fund Focus (Sectors)", "Partner Name", "Partner Email",
+                            "Portfolio Companies", "Location", "Twitter Link", "LinkedIn Link"
+                        ].map(field => (
+                            <span key={field} className="field-pill">{field}</span>
+                        ))}
                     </div>
                 </div>
+
+                <div className="benefits-how-to-grid">
+                    {/* Why Founders Buy */}
+                    <div className="benefit-column">
+                        <h3 className="column-title">Why founders buy this</h3>
+                        <ul className="benefit-list">
+                            <li><Check size={18} /> Cuts investor research time from weeks to hours.</li>
+                            <li><Check size={18} /> Enables hyper-targeted outreach by sector and stage.</li>
+                            <li><Check size={18} /> Ready format for mail merges and CRM imports.</li>
+                            <li><Check size={18} /> Consistent layout for shared team dashboards.</li>
+                        </ul>
+                    </div>
+
+                    {/* How Buyers Use It */}
+                    <div className="benefit-column">
+                        <h3 className="column-title">How to use it</h3>
+                        <ul className="usage-steps">
+                            <li><strong>1. Filter</strong> by stage/sector to build a 50–100 prospect list.</li>
+                            <li><strong>2. Personalize</strong> 1–2 lines referencing a portfolio company.</li>
+                            <li><strong>3. Send</strong> a tailored cold email + one follow up using our templates.</li>
+                            <li><strong>4. Segment</strong> by portfolio overlap to increase reply rates.</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
     );

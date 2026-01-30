@@ -5,7 +5,7 @@ import Partners from './Partners';
 import Testimonials from './Testimonials';
 import WhatWeDo from './WhatWeDo';
 import Pricing from './Pricing';
-import Contact from './Contact';
+import FAQ from './FAQ';
 import Footer from './Footer';
 
 const Home: React.FC = () => {
@@ -48,9 +48,9 @@ const Home: React.FC = () => {
                 }
             }
 
-            const contactSection = document.querySelector('.contact-section');
-            if (contactSection) {
-                const rect = contactSection.getBoundingClientRect();
+            const faqSection = document.querySelector('.faq-section');
+            if (faqSection) {
+                const rect = faqSection.getBoundingClientRect();
                 if (rect.top <= 80 && rect.bottom >= 80) {
                     currentTheme = 'light';
                 }
@@ -80,7 +80,7 @@ const Home: React.FC = () => {
                 <Testimonials />
                 <WhatWeDo />
                 <Pricing />
-                <Contact />
+                <FAQ />
             </main>
             <Footer />
 

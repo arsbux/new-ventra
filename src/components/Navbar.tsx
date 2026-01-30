@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -17,15 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'dark' }) => {
             <div className="container navbar-container">
                 <div className="logo">Ventra</div>
 
-                <div className="nav-links-desktop">
-                    <a href="#services" className="nav-item">Services</a>
-                    <a href="#pricing" className="nav-item">Pricing</a>
-                    <a href="#testimonials" className="nav-item">Testimonials</a>
-                    <Link to="/case-study" className="nav-item">Case Study</Link>
-                </div>
-
                 <div className="nav-actions-desktop">
-                    <a href="#contact" className="btn-contact">Book a call</a>
                 </div>
 
                 {/* Mobile Menu Icon */}
@@ -75,37 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'dark' }) => {
                                     open: { transition: { staggerChildren: 0.05, delayChildren: 0.2 } },
                                     closed: { transition: { staggerChildren: 0.05, staggerDirection: -1 } }
                                 }}
-                            >
-                                <motion.a
-                                    variants={{ open: { opacity: 1, x: 0 }, closed: { opacity: 0, x: -10 } }}
-                                    href="#services"
-                                    className="mobile-nav-item"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Services
-                                </motion.a>
-                                <motion.a
-                                    variants={{ open: { opacity: 1, x: 0 }, closed: { opacity: 0, x: -10 } }}
-                                    href="#pricing"
-                                    className="mobile-nav-item"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Pricing
-                                </motion.a>
-                                <motion.a
-                                    variants={{ open: { opacity: 1, x: 0 }, closed: { opacity: 0, x: -10 } }}
-                                    href="#testimonials"
-                                    className="mobile-nav-item"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Testimonials
-                                </motion.a>
-                                <motion.div variants={{ open: { opacity: 1, x: 0 }, closed: { opacity: 0, x: -10 } }}>
-                                    <Link to="/case-study" className="mobile-nav-item" onClick={() => setIsMenuOpen(false)}>
-                                        Case Study
-                                    </Link>
-                                </motion.div>
-                            </motion.div>
+                            />
 
                             <motion.div
                                 className="mobile-actions"
@@ -113,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'dark' }) => {
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.4 }}
                             >
-                                <a href="#contact" className="btn-contact-mobile" onClick={() => setIsMenuOpen(false)}>Book a call</a>
+                                <a href="#pricing" className="btn-contact-mobile" onClick={() => setIsMenuOpen(false)}>Get Access</a>
                             </motion.div>
                         </div>
                     </motion.div>

@@ -316,13 +316,8 @@ button {
 }
 
 .hero-image-container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.02);
 }
 
 @media (min-width: 1024px) {
@@ -338,10 +333,9 @@ button {
   }
 
   .hero-image-container {
-    width: 160%;
-    margin-right: -40%;
-    box-shadow: -40px 40px 80px rgba(0, 0, 0, 0.6);
-    transform: translateY(-80px) rotate(-1deg);
+    width: 110%;
+    margin-right: -5%;
+    transform: translateY(-40px);
   }
 }
 

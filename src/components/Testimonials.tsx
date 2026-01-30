@@ -5,15 +5,31 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const testimonials = [
     {
         id: 1,
-        quote: "...it was crucial to keep getting clients and Ventra helped enabled a seamless partnership",
-        author: "Nichole Wischoff, From Insight Evaluation Solutions",
-        image: "/testimonials/nicole-wischoff.jpg"
+        quote: "We were struggling to find the right VCs for our seed round. Ventra's list gave us 50 perfect matches in minutes. We closed in 3 weeks.",
+        author: "Sarah J., Founder of Nexa AI",
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop",
+        position: 'center 30%'
     },
     {
         id: 2,
+        quote: "The manual research was killing our momentum. Having a vetted list of active angels with direct emails was a total game-changer for our Pre-Seed.",
+        author: "Marcus T., CTO of Veridate",
+        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop",
+        position: 'center'
+    },
+    {
+        id: 3,
+        quote: "...it was crucial to keep getting clients and Ventra helped enabled a seamless partnership",
+        author: "Nichole Wischoff, From Insight Evaluation Solutions",
+        image: "/testimonials/nicole-wischoff.jpg",
+        position: 'center'
+    },
+    {
+        id: 4,
         quote: "...first month didn't go as planned but we made more than the retainer cost us.",
         author: "Lenny Rachitsky, Lenny's Newsletter",
-        image: "/testimonials/Lenny.jpg"
+        image: "/testimonials/Lenny.jpg",
+        position: 'center'
     }
 ];
 
@@ -76,7 +92,10 @@ const Testimonials: React.FC = () => {
                         }}
                         className="testimonial-slide"
                     >
-                        <div className="testimonial-bg" style={{ backgroundImage: `url(${testimonials[index].image})` }}>
+                        <div className="testimonial-bg" style={{
+                            backgroundImage: `url(${testimonials[index].image})`,
+                            backgroundPosition: (testimonials[index] as any).position || 'center'
+                        }}>
                             <div className="testimonial-overlay" />
                         </div>
 

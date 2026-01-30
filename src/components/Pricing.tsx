@@ -16,46 +16,46 @@ const Pricing: React.FC = () => {
                 </div>
 
                 <div className="pricing-grid">
-                    {/* B2B Outbound Card */}
+                    {/* The Master List Card */}
                     <div className="pricing-card">
                         <div className="card-top-accent traditional-accent"></div>
                         <div className="card-body">
-                            <h3 className="card-plan-title">B2B Outbound</h3>
-                            <p className="card-plan-subtitle">Ideal for sales-led B2B organizations</p>
-                            <p className="card-plan-desc">Fully managed outreach targeting decision makers at your dream accounts with precision and human qualification.</p>
+                            <h3 className="card-plan-title">The Master List</h3>
+                            <p className="card-plan-subtitle">Ideal for early-stage founders</p>
+                            <p className="card-plan-desc">Instant access to our full 5,000+ investor database with direct contact emails and thesis details.</p>
 
                             <div className="card-price-container">
-                                <div className="price-label">Initial</div>
+                                <div className="price-label">One-time</div>
                                 <div className="price-value-row">
                                     <span className="price-currency">$</span>
-                                    <span className="price-amount">1,500</span>
-                                    <span className="price-period">for first month</span>
+                                    <span className="price-amount">499</span>
+                                    <span className="price-period">lifetime access</span>
                                 </div>
                             </div>
 
-                            <a href="#contact" className="btn-pricing-cta">Talk to an expert</a>
+                            <a href="#contact" className="btn-pricing-cta">Get Instant Access</a>
                         </div>
                     </div>
 
-                    {/* Paid Ads Card */}
+                    {/* Bespoke Sourcing Card */}
                     <div className="pricing-card featured-pricing-card">
                         <div className="card-top-accent paid-accent"></div>
                         <div className="card-body">
-                            <div className="card-badge-minimal">Popular choice</div>
-                            <h3 className="card-plan-title">Paid Ads</h3>
-                            <p className="card-plan-subtitle">Ideal for non-B2B businesses & B2C</p>
-                            <p className="card-plan-desc">High-conversion performance campaigns across Meta, Google, and TikTok to drive consistent volume and scale.</p>
+                            <div className="card-badge-minimal">Recommended</div>
+                            <h3 className="card-plan-title">Bespoke Sourcing</h3>
+                            <p className="card-plan-subtitle">Ideal for Series A+ rounds</p>
+                            <p className="card-plan-desc">We hand-pick 200 perfect-fit investors for your specific round, vertical, and geography. Includes warm intro strategy.</p>
 
                             <div className="card-price-container">
-                                <div className="price-label">Monthly</div>
+                                <div className="price-label">Starting at</div>
                                 <div className="price-value-row">
                                     <span className="price-currency">$</span>
-                                    <span className="price-amount">2,000</span>
-                                    <span className="price-period">/ month</span>
+                                    <span className="price-amount">1,499</span>
+                                    <span className="price-period">per round</span>
                                 </div>
                             </div>
 
-                            <a href="#contact" className="btn-pricing-cta">Talk to an expert</a>
+                            <a href="#contact" className="btn-pricing-cta">Enquire Now</a>
                         </div>
                     </div>
                 </div>

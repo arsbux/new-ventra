@@ -85,16 +85,16 @@ const CaseStudy: React.FC = () => {
                         <div className="header-content-centered">
                             <div className="article-category">Case Study</div>
                             <h1 className="article-title">
-                                How Ventra turned inconsistent client flow into repeatable meetings and real revenue
+                                How Nexa AI closed their Seed round in 3 weeks using Ventra's curated investor list
                             </h1>
                             <div className="article-meta">
                                 <div className="meta-block">
                                     <span className="meta-label">Client</span>
-                                    <span className="meta-value">Insight Evaluation Solutions</span>
+                                    <span className="meta-value">Nexa AI</span>
                                 </div>
                                 <div className="meta-block">
                                     <span className="meta-label">Focus</span>
-                                    <span className="meta-value">Outbound Growth</span>
+                                    <span className="meta-value">Seed Fundraising</span>
                                 </div>
                             </div>
                         </div>
@@ -103,66 +103,47 @@ const CaseStudy: React.FC = () => {
 
                 {/* Featured Image */}
                 <div className="featured-image-wrapper">
-                    <img src="/testimonials/nicole-wischoff.jpg" alt="Insight Evaluation Solutions Case Study" className="featured-image" />
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070&auto=format&fit=crop" alt="Nexa AI Case Study" className="featured-image" />
                 </div>
 
                 <div className="article-content">
                     <div className="container container-content">
                         <section className="article-section">
                             <p className="lead-text">
-                                Insight Evaluation Solutions is a Business consultant Company in the United States, they needed a steady stream of paying clients, not just leads.
-                                The Ventra team ran a focused 30-day pilot that combined targeted outreach, human qualification, and calendar booking.
+                                Nexa AI, a Silicon Valley-based startup, needed to find the right investors for their highly specialized Seed round.
+                                They were wasting weeks on manual research and hitting dead ends with outdated spreadsheets.
                             </p>
                             <div className="result-highlight-card">
                                 <h3>The Outcome</h3>
-                                <p>We managed to book in <strong>nine appointments within week two</strong>, and two of which converted into ongoing engagements totaling <strong>~$18k in contracted work</strong> this quarter.</p>
+                                <p>Instead of months of research, Nexa used Ventra's curated list to identify <strong>50 perfect-fit VCs</strong> on day one. They secured 12 meetings in week one and closed their <strong>$2M Seed round</strong> within 21 days.</p>
                             </div>
                         </section>
 
                         <section className="article-section">
                             <h2>The Challenge</h2>
-                            <p>Insight Evaluation Solutions had a proven service and past sales, but inconsistent new client flow. They had limited internal bandwidth to run high-quality outbound at scale and were skeptical about agency pilots after being burned by vague "lead" offers in the past.</p>
-                            <p>They needed a predictable pipeline of qualified, buyer-side meetings with decision-makers that fit their price band and buying timeline.</p>
+                            <p>Founders often spend 50% of their time just finding who to talk to. Nexa AI was no different. They had a great product but didn't have the network. Conventional databases were too expensive or filled with generic, outdated information that led to low response rates.</p>
                         </section>
 
                         <section className="article-section">
                             <h2>Ventra's Approach</h2>
-                            <p>We designed a short, measurable experiment focused on outcome and transparency. This mix put the work on Ventra (execution) while giving Insight complete visibility and control.</p>
+                            <p>We provided Nexa with a bespoke slice of our master database, filtered specifically for AI-focused Seed investors with a track record of lead investments in 2024-2025.</p>
                             <div className="methodology-steps">
                                 <div className="m-step">
                                     <span className="m-num">01</span>
                                     <div className="m-text">
-                                        <strong>Defined the target buyer</strong> — Companies / Businesses that are between 10-50 employees and less than 3 years.
+                                        <strong>Targeted Filtering</strong> — We narrowed down 5,000+ investors to the top 100 based on Nexa's vertical and stage.
                                     </div>
                                 </div>
                                 <div className="m-step">
                                     <span className="m-num">02</span>
                                     <div className="m-text">
-                                        <strong>Messaging</strong> — Result-focused, with specific timeframe, and benefits.
+                                        <strong>Direct Access</strong> — Every contact came with a verified, direct email address, bypassing the generic "info@" inboxes.
                                     </div>
                                 </div>
                                 <div className="m-step">
                                     <span className="m-num">03</span>
                                     <div className="m-text">
-                                        <strong>Where to find them + Outreach</strong> — LinkedIn, Instagram. Mainly email for outreach.
-                                    </div>
-                                </div>
-                                <div className="m-step">
-                                    <span className="m-num">04</span>
-                                    <div className="m-text">
-                                        <strong>Human qualification</strong> — SDR screened every positive reply via a 3-minute intake for budget and authority.
-                                    </div>
-                                </div>
-                                <div className="m-step">
-                                    <span className="m-num">05</span>
-                                    <div className="m-text">
-                                        <strong>Book the meeting</strong> — Meetings placed directly into the client's calendar with provided intake notes.
-                                    </div>
-                                </div>
-                                <div className="m-step">
-                                    <span className="m-num">06</span>
-                                    <div className="m-text">
-                                        <strong>Transparency</strong> — Monday and Thursday reports with full outreach copies, reply excerpts, and confirmations.
+                                        <strong>Thesis Insights</strong> — We provided the exact investment thesis for each partner, allowing Nexa to personalize every pitch.
                                     </div>
                                 </div>
                             </div>
@@ -170,8 +151,8 @@ const CaseStudy: React.FC = () => {
 
                         <section className="article-section">
                             <blockquote className="blog-blockquote">
-                                "I signed up for the pilot more to test the process than because I expected miracles — in 30 days Ventra booked 8 qualified meetings for us. Two turned into clients worth about $18k in recurring work this quarter. No black box — just results."
-                                <cite>— Nichole W., Insight Evaluation Solutions</cite>
+                                "The manual research was a black hole. Ventra's list was the shortcut we needed to get in front of the right people immediately. It paid for itself a thousand times over."
+                                <cite>— Sarah J., Nexa AI</cite>
                             </blockquote>
                         </section>
                     </div>
@@ -180,8 +161,8 @@ const CaseStudy: React.FC = () => {
                 {/* Full-width booking section */}
                 <section className="cs-booking-section">
                     <div className="container">
-                        <h2>Want a repeatable client-acquisition engine?</h2>
-                        <p>Ventra can run a short pilot and show you the pipeline within 30 days. Book a discovery call to see how we can scale your client acquisition.</p>
+                        <h2>Ready to close your round?</h2>
+                        <p>Ventra can help you skip the research and get straight to the pitch. Book a discovery call to see how we can help you find your lead investor.</p>
                         <div className="cal-embed-wrapper-cs">
                             <div style={{ width: '100%', height: '100%', overflow: 'scroll' }} id="my-cal-inline-casestudy"></div>
                         </div>

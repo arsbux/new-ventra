@@ -62,8 +62,8 @@ const Contact: React.FC = () => {
         <section className="contact-section" id="contact">
             <div className="container contact-container">
                 <div className="contact-header">
-                    <h2 className="contact-title">Speak to us today</h2>
-                    <p className="contact-subtitle">Book a discovery call to see how we can scale your client acquisition.</p>
+                    <h2 className="contact-title">Ready to close your round?</h2>
+                    <p className="contact-subtitle">Book a discovery call to see how we can build a bespoke investor strategy for your business.</p>
                 </div>
 
                 <div className="cal-embed-wrapper">

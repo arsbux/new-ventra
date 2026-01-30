@@ -5,27 +5,27 @@ const WhatWeDo: React.FC = () => {
     return (
         <section className="what-we-do-section" id="services">
             <div className="container">
-                <h2 className="what-we-do-main-header">How we get results</h2>
+                <h2 className="what-we-do-main-header">Stop manual research</h2>
                 {/* Part 1: Minimalist Offers Grid */}
                 <div className="offers-grid">
                     {/* Offer 1 */}
                     <div className="offer-card-minimal">
                         <div className="offer-content-main">
-                            <div className="offer-tag-minimal">Offer 1</div>
-                            <h2 className="offer-title-minimal">Outbound Client Acquisition</h2>
-                            <p className="offer-desc-minimal">Qualified B2B buyer meetings booked on your calendar through high-intent multi-channel outreach.</p>
-                            <a href="#contact" className="btn-get-started-minimal">Get started</a>
+                            <div className="offer-tag-minimal">Instant Access</div>
+                            <h2 className="offer-title-minimal">The Master Investor List</h2>
+                            <p className="offer-desc-minimal">Lifetime access to our full database of 5,000+ active investors across all sectors and stages.</p>
+                            <a href="#pricing" className="btn-get-started-minimal">Get access</a>
                         </div>
                         <div className="offer-details-minimal">
                             <div className="details-group">
                                 <h4 className="details-label-minimal">What this includes</h4>
                                 <ul className="minimal-list">
-                                    <li><Check size={14} /> ICP definition</li>
-                                    <li><Check size={14} /> Prospect sourcing</li>
-                                    <li><Check size={14} /> Messaging & positioning</li>
-                                    <li><Check size={14} /> Multi-channel outbound</li>
-                                    <li><Check size={14} /> Human qualification</li>
-                                    <li><Check size={14} /> Calendar booking</li>
+                                    <li><Check size={14} /> 5,000+ VCs & Angels</li>
+                                    <li><Check size={14} /> Direct email addresses</li>
+                                    <li><Check size={14} /> Investment thesis details</li>
+                                    <li><Check size={14} /> Geography & Stage filters</li>
+                                    <li><Check size={14} /> Recent portfolio wins</li>
+                                    <li><Check size={14} /> Lifetime free updates</li>
                                 </ul>
                             </div>
                         </div>
@@ -34,20 +34,20 @@ const WhatWeDo: React.FC = () => {
                     {/* Offer 2 */}
                     <div className="offer-card-minimal">
                         <div className="offer-content-main">
-                            <div className="offer-tag-minimal">Offer 2</div>
-                            <h2 className="offer-title-minimal">Paid Ads</h2>
-                            <p className="offer-desc-minimal">High-performance campaigns across Facebook, Google, TikTok, and more, optimized for B2B buyer meetings.</p>
-                            <a href="#contact" className="btn-get-started-minimal">Get started</a>
+                            <div className="offer-tag-minimal">Full Concierge</div>
+                            <h2 className="offer-title-minimal">Bespoke Round Prospecting</h2>
+                            <p className="offer-desc-minimal">We build a hand-picked list of 100 perfect-fit investors for your specific round and vertical.</p>
+                            <a href="#pricing" className="btn-get-started-minimal">Enquire</a>
                         </div>
                         <div className="offer-details-minimal">
                             <div className="details-group">
                                 <h4 className="details-label-minimal">What this includes</h4>
                                 <ul className="minimal-list">
-                                    <li><Check size={14} /> Funnel strategy</li>
-                                    <li><Check size={14} /> Ad setup & management</li>
-                                    <li><Check size={14} /> Conversion tracking</li>
-                                    <li><Check size={14} /> Lead qualification</li>
-                                    <li><Check size={14} /> Calendar booking</li>
+                                    <li><Check size={14} /> Deep-dive ICP analysis</li>
+                                    <li><Check size={14} /> 100 high-intent prospects</li>
+                                    <li><Check size={14} /> Warm intro strategy</li>
+                                    <li><Check size={14} /> Outreach template review</li>
+                                    <li><Check size={14} /> Weekly refinement calls</li>
                                 </ul>
                             </div>
                         </div>
@@ -61,12 +61,12 @@ const WhatWeDo: React.FC = () => {
                             <span className="dot-prefix">●</span>
                             <span className="label">Our Methodology</span>
                             <h3 className="methodology-main-title">
-                                Our Outbound system <br />
-                                to get you a steady <br />
-                                flow of clients
+                                How we curate <br />
+                                high-quality <br />
+                                investor data
                             </h3>
                             <p className="methodology-desc">
-                                A battle-tested process designed to deliver ready-to-close meetings directly to your team.
+                                A rigorous verification process to ensure you never waste an email.
                             </p>
                         </div>
                     </div>
@@ -74,37 +74,33 @@ const WhatWeDo: React.FC = () => {
                     <div className="methodology-right">
                         <div className="step-card-minimal">
                             <div className="step-num-minimal">01</div>
-                            <h4 className="step-title-minimal">Nail the ICP</h4>
+                            <h4 className="step-title-minimal">Multi-Source Scraping</h4>
                             <p className="step-text-minimal">
-                                We define exactly who they are, identify key industries, understand their current state,
-                                find where they hang out, and determine the best outreach method.
+                                We aggregate data from 20+ premium sources including Pitchbook, Crunchbase, and proprietary internal databases.
                             </p>
                         </div>
 
                         <div className="step-card-minimal">
                             <div className="step-num-minimal">02</div>
-                            <h4 className="step-title-minimal">Finding Prospects</h4>
+                            <h4 className="step-title-minimal">Human Verification</h4>
                             <p className="step-text-minimal">
-                                Advanced lead generation using premium data sources and proprietary tools
-                                to build a list of high-intent decision makers.
+                                Our data team manually verifies every contact email and investment thesis to ensure 99% deliverability.
                             </p>
                         </div>
 
                         <div className="step-card-minimal">
                             <div className="step-num-minimal">03</div>
-                            <h4 className="step-title-minimal">Start Outreach One-by-One</h4>
+                            <h4 className="step-title-minimal">Contextual Enrichment</h4>
                             <p className="step-text-minimal">
-                                Personalized, value-driven outreach. We don't blast. We engage one-by-one,
-                                primarily through cold email and LinkedIn.
+                                We add depth to every profile, including recent investments, preferred round sizes, and geographic focus.
                             </p>
                         </div>
 
                         <div className="step-card-minimal">
                             <div className="step-num-minimal">04</div>
-                            <h4 className="step-title-minimal">Book Straight in Calendar</h4>
+                            <h4 className="step-title-minimal">Continuous Updates</h4>
                             <p className="step-text-minimal">
-                                No friction. We handle the qualification and the back-and-forth,
-                                delivering ready-to-close meetings directly to your sales team.
+                                The VC landscape changes fast. We update our database every 30 days so you always have fresh leads.
                             </p>
                         </div>
                     </div>

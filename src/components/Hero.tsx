@@ -19,14 +19,14 @@ const Hero: React.FC = () => {
             <div className="container hero-container">
                 {/* Badge */}
                 <motion.a
-                    href="#contact"
+                    href="#pricing"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     className="hero-badge"
                     style={{ cursor: 'pointer', textDecoration: 'none' }}
                 >
-                    Book a free discovery call <ArrowRight size={14} style={{ marginLeft: 6 }} />
+                    Fundraising season is here <ArrowRight size={14} style={{ marginLeft: 6 }} />
                 </motion.a>
 
                 {/* Main Heading */}
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
                     className="hero-heading"
                 >
                     <DynamicGradientWrapper colors={[color1, color2, color3, color4]}>
-                        Do you need more clients?
+                        Skip the research. Find your lead investor.
                     </DynamicGradientWrapper>
                 </motion.h1>
 
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
                     className="hero-subheading"
                     style={{ color: 'var(--dynamic-text)', opacity: 0.7 }}
                 >
-                    For High-ticket B2B businesses, we bring in 15-50 clients every month.
+                    A well-curated database of 5,000+ active VCs, Angels, and PE firms with direct contact emails and investment thesis.
                 </motion.p>
 
                 {/* CTA Button */}
@@ -58,28 +58,28 @@ const Hero: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                    <a href="#contact" className="btn-cta">Book a Call</a>
+                    <a href="#pricing" className="btn-cta">Get Instant Access</a>
                 </motion.div>
 
                 {/* Features Grid */}
                 <div className="features-grid">
                     <FeatureCard
-                        title="Custom Outreach"
-                        image="https://images.unsplash.com/photo-1664575198308-3959904fa430?q=80&w=2070&auto=format&fit=crop"
+                        title="Vetted VCs & Angels"
+                        image="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070&auto=format&fit=crop"
                         delay={0.4}
                     />
                     <FeatureCard
-                        title="Paid Ads"
+                        title="Verified Contacts"
                         image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
                         delay={0.5}
                     />
                     <FeatureCard
-                        title="Market Intelligence"
-                        image="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop"
+                        title="Thesis Match"
+                        image="https://images.unsplash.com/photo-1454165833767-1306d54c1601?q=80&w=2070&auto=format&fit=crop"
                         delay={0.6}
                     />
                     <FeatureCard
-                        title="Campaign Success"
+                        title="Raised $500M+"
                         image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2026&auto=format&fit=crop"
                         delay={0.7}
                     />

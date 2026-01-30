@@ -13,13 +13,13 @@ const Partners: React.FC = () => {
 
                     <div className="fund-management-card">
                         <div className="fund-content">
-                            <h3 className="fund-title">Full Service Client Acquisition</h3>
+                            <h3 className="fund-title">Full Service Fundraising Support</h3>
 
                             <div className="service-items-wrapper">
-                                <div className="service-item"><strong>Outbound</strong> — Targeted LinkedIn + cold email sequences, human qualification, calendar booking.</div>
-                                <div className="service-item"><strong>Paid Ads</strong> — LinkedIn / Google / Meta / Tiktok, conversion tracking, lead-to-meeting booking.</div>
-                                <div className="service-item"><strong>Transparency</strong> — Weekly activity logs, message copies, buyer intake answers, and meeting confirmations.</div>
-                                <div className="service-item"><strong>Guarantee</strong> — If our 30-day pilot target isn't met, you get credit or continued service until we deliver.</div>
+                                <div className="service-item"><strong>Tailored Lists</strong> — We filter our 5,000+ database into a high-intent list of 100+ investors perfectly matched to your round.</div>
+                                <div className="service-item"><strong>Direct Contacts</strong> — No gatekeepers. Get verified direct emails of partners and principals with a 99% deliverability rate.</div>
+                                <div className="service-item"><strong>Thesis Enrichment</strong> — Go beyond the name. We provide recent investment history and the specific thesis of every investor.</div>
+                                <div className="service-item"><strong>Pitch Support</strong> — Get access to our library of winning pitch decks and outreach templates that have raised $500M+.</div>
                             </div>
                         </div>
                         <div className="fund-image-composite">
